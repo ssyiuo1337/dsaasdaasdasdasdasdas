@@ -39,7 +39,7 @@ function SignAndPackage($name) {
     }
 
     echo "Compat Mode? $env:SURFER_COMPAT"
-    pnpm surfer package --verbose
+    npm surfer package --verbose
 
     # In the release script, we do the following:
     #  tar -xvf .github/workflows/object/windows-x64-signed-generic.tar.gz -C windows-x64-signed-generic
